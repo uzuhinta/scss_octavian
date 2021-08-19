@@ -1,0 +1,30 @@
+.footer-bottom {
+    background-color: $bg-purple-dark;
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        color: $grey-light;
+        font-size: 1.6rem;
+        position: relative;
+    }
+    &__content {
+        span {
+            color: $white;
+        }
+    }
+
+    &__to-top {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(-50%);
+        padding: 20px;
+        background-color: #4a44f2;
+        border-radius: 5px;
+        img {
+            width: 20px;
+        }
+    }
+}

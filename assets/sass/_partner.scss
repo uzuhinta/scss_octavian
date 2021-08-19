@@ -1,0 +1,15 @@
+.partner {
+    padding-bottom: 150px;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 100px 0;
+    }
+    &__item {
+        @include mixin_flex(center);
+        img {
+            max-width: 80%;
+            max-height: 90px;
+        }
+    }
+}

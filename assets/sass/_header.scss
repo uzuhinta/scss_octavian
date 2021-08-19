@@ -1,0 +1,51 @@
+.header {
+    display: block;
+    &__main {
+        @include mixin_flex;
+        height: 120px;
+    }
+
+    img {
+        height: 44px;
+    }
+    &__nav {
+        @include mixin_flex;
+        gap: 0 70px;
+    }
+    &__phone {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: $grey;
+        strong {
+            font-weight: 600;
+            margin-left: 15px;
+        }
+    }
+
+    &__search,
+    &__menu {
+        cursor: pointer;
+    }
+
+    // @include maxW(1023) {
+    //     &__main {
+    //         height: 130px;
+    //     }
+    //     &__nav {
+    //         gap: 0 20px;
+    //     }
+    //     &__phone {
+    //         display: none;
+    //     }
+    // }
+
+    // @include maxW(767) {
+    //     &__main {
+    //         height: 100px;
+    //     }
+
+    //     img {
+    //         height: 30px;
+    //     }
+    // }
+}

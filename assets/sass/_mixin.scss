@@ -1,0 +1,18 @@
+@mixin mixin_flex($justify: space-between, $align: center, $wrap: wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin maxW($breakpoint) {
+    @media screen and (max-width: $breakpoint + "px") {
+        @content;
+    }
+}
+
+@mixin minW($breakpoint) {
+    @media screen and (min-width: $breakpoint + "px") {
+        @content;
+    }
+}

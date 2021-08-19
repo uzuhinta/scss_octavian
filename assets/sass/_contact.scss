@@ -1,0 +1,42 @@
+.contact {
+    background: url('../images/contact-bg.png') no-repeat center / cover;
+    color: $white;
+    padding: 150px 0;
+    &__main {
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+    }
+    &__heading {
+      font-size: 3.6rem;
+      margin-bottom: 50px;
+      strong {
+        font-weight: 700;
+      }
+    }
+    &__desc {
+      font-size: 1.8rem;
+      line-height: 1.9;
+      margin-bottom: 100px;
+    }
+
+    &__input {
+      color: $white;
+      padding-left: 10px;
+      font-size: 1.4rem;
+      line-height: 55px;
+      background: transparent;
+      outline: none;
+      border: 2px solid rgba($color: #ffffff, $alpha: 0.5);
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 30px;
+      &:focus {
+        border: 2px solid $white;
+      }
+
+      &::placeholder{
+        color: $white;
+      }
+    }
+}

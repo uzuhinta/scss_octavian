@@ -2,6 +2,7 @@
     background: url('../images/contact-bg.png') no-repeat center / cover;
     color: $white;
     padding: 150px 0;
+    display: block;
     &__main {
       max-width: 600px;
       margin: 0 auto;
@@ -38,5 +39,26 @@
       &::placeholder{
         color: $white;
       }
+    }
+
+    @include maxW(1023) {
+      padding: 100px 0;
+      &__heading {
+        font-size: 3rem;
+        margin-bottom: 30px;
+      }
+
+      &__desc {
+        margin-bottom: 30px;
+      }
+
+      button {
+        margin: 0 auto;
+      }
+    }
+
+    @include maxW(767) {
+      padding: 60px 0;
+
     }
 }

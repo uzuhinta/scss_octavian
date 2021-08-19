@@ -27,4 +27,17 @@
             width: 20px;
         }
     }
+
+    @include maxW(767) {
+        &__main {
+            height: 100px;
+        }
+        &__to-top {
+            padding: 10px;
+            border-radius: 3px;
+            img {
+                width: 15px;
+            }
+        }
+    }
 }

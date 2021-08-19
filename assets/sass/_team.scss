@@ -1,49 +1,91 @@
 .team {
-  background-color: $bg-grey;
-  padding: 150px 0;
-  &__main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0 90px
-  }
+    background-color: $bg-grey;
+    padding: 150px 0;
+    display: block;
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 90px;
+    }
 
-  &__content {
-    max-width: 370px;
-    margin-bottom: 44px;
-  }
+    &__content {
+        max-width: 370px;
+        margin-bottom: 44px;
+    }
 
-  &__heading {
-    font-size: 3.6rem;
-    font-weight: 800;
-    line-height: 1.5;
-    margin-bottom: 44px;
-  }
+    &__heading {
+        font-size: 3.6rem;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 44px;
+    }
 
-  &__desc {
-    font-size: 1.8rem;
-    line-height: 1.9;
-    margin-bottom: 70px;
-  }
-  &__images {
-    max-width: 670px;
-    display: flex;
-    gap: 0 30px;
-    align-items: center;
-    img {
-      width: 100%;
-      &:nth-child(2) {
-        width: 60%;
+    &__desc {
+        font-size: 1.8rem;
+        line-height: 1.9;
+        margin-bottom: 70px;
+    }
+    &__images {
+        max-width: 670px;
+        display: flex;
+        gap: 0 30px;
+        align-items: center;
+        img {
+            width: 100%;
+            &:nth-child(2) {
+                width: 60%;
+            }
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+        align-items: flex-end;
+    }
+
+    @include maxW(1023) {
+      padding: 100px 0;
+        &__main {
+            display: block;
+        }
+
+        &__content {
+            margin: 0 auto;
+            padding-bottom: 60px;
+
+            button {
+              margin: 0 auto;
+            }
+        }
+
+        &__desc {
+            margin-bottom: 50px;
+        }
+
+        &__heading {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        &__images {
+            margin: 0 auto;
+        }
+    }
+
+    @include maxW(767) {
+      padding: 60px 0;
+      &__images {
+        display: block;
+        img {
+          width: 100%;
+          &:nth-child(2) {
+              width: 100%;
+              margin-bottom: 30px;
+          }
+      }
       }
     }
-    
-  }
-
-  &__column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px 0;
-    align-items: flex-end;
-  }
-
 }

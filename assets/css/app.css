@@ -100,12 +100,6 @@ body {
   background: linear-gradient(to right, #f474a2, #ffad3a);
 }
 
-header,
-footer,
-section {
-  display: none;
-}
-
 .header {
   display: block;
 }
@@ -151,7 +145,7 @@ section {
 }
 @media screen and (max-width: 767px) {
   .header__main {
-    height: 100px;
+    height: 60px;
   }
   .header img {
     height: 30px;
@@ -204,6 +198,9 @@ section {
   }
 }
 @media screen and (max-width: 767px) {
+  .hero {
+    margin-bottom: 60px;
+  }
   .hero__caption {
     font-size: 1.8rem;
   }
@@ -246,8 +243,33 @@ section {
   text-decoration: none;
   font-size: 1.4rem;
 }
+@media screen and (max-width: 1023px) {
+  .portfolio {
+    padding-bottom: 100px;
+  }
+  .portfolio__list {
+    grid-gap: 0 30px;
+    margin-bottom: 100px;
+  }
+  .portfolio__column {
+    gap: 30px 0;
+  }
+  .portfolio__item img {
+    margin-bottom: 20px;
+  }
+  .portfolio__heading {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0;
+  }
+}
 
 .partner {
+  display: block;
   padding-bottom: 150px;
 }
 .partner__list {
@@ -265,10 +287,20 @@ section {
   max-width: 80%;
   max-height: 90px;
 }
+@media screen and (max-width: 767px) {
+  .partner {
+    padding-bottom: 60px;
+  }
+  .partner__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 0;
+  }
+}
 
 .team {
   background-color: #f8f8f9;
   padding: 150px 0;
+  display: block;
 }
 .team__main {
   display: flex;
@@ -309,9 +341,50 @@ section {
   gap: 30px 0;
   align-items: flex-end;
 }
+@media screen and (max-width: 1023px) {
+  .team {
+    padding: 100px 0;
+  }
+  .team__main {
+    display: block;
+  }
+  .team__content {
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  .team__content button {
+    margin: 0 auto;
+  }
+  .team__desc {
+    margin-bottom: 50px;
+  }
+  .team__heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  .team__images {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team {
+    padding: 60px 0;
+  }
+  .team__images {
+    display: block;
+  }
+  .team__images img {
+    width: 100%;
+  }
+  .team__images img:nth-child(2) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 
 .service {
   padding: 150px 0;
+  display: block;
 }
 .service__heading, .service__title {
   font-size: 3.6rem;
@@ -348,11 +421,26 @@ section {
   text-decoration: none;
   font-size: 1.4rem;
 }
+@media screen and (max-width: 1023px) {
+  .service {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service {
+    padding: 60px 0;
+  }
+  .service__list {
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0;
+  }
+}
 
 .contact {
   background: url("../images/contact-bg.png") no-repeat center/cover;
   color: #ffffff;
   padding: 150px 0;
+  display: block;
 }
 .contact__main {
   max-width: 600px;
@@ -389,10 +477,31 @@ section {
 .contact__input::placeholder {
   color: #ffffff;
 }
+@media screen and (max-width: 1023px) {
+  .contact {
+    padding: 100px 0;
+  }
+  .contact__heading {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .contact__desc {
+    margin-bottom: 30px;
+  }
+  .contact button {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 60px 0;
+  }
+}
 
 .footer-top {
   background-color: #282f3a;
   padding: 150px 0;
+  display: block;
 }
 .footer-top__list {
   display: grid;
@@ -429,6 +538,26 @@ section {
   color: inherit;
   text-decoration: none;
 }
+@media screen and (max-width: 1023px) {
+  .footer-top {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-top {
+    padding: 60px 0;
+  }
+  .footer-top__list {
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0;
+  }
+  .footer-top__desc, .footer-top__heading {
+    margin: 25px 0;
+  }
+  .footer-top__nav-link {
+    gap: 15px 0;
+  }
+}
 
 .footer-bottom {
   background-color: #252b36;
@@ -456,6 +585,18 @@ section {
 }
 .footer-bottom__to-top img {
   width: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer-bottom__main {
+    height: 100px;
+  }
+  .footer-bottom__to-top {
+    padding: 10px;
+    border-radius: 3px;
+  }
+  .footer-bottom__to-top img {
+    width: 15px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

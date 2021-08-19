@@ -27,25 +27,25 @@
         cursor: pointer;
     }
 
-    // @include maxW(1023) {
-    //     &__main {
-    //         height: 130px;
-    //     }
-    //     &__nav {
-    //         gap: 0 20px;
-    //     }
-    //     &__phone {
-    //         display: none;
-    //     }
-    // }
+    @include maxW(1023) {
+        &__main {
+            height: 130px;
+        }
+        &__nav {
+            gap: 0 20px;
+        }
+        &__phone {
+            display: none;
+        }
+    }
 
-    // @include maxW(767) {
-    //     &__main {
-    //         height: 100px;
-    //     }
+    @include maxW(767) {
+        &__main {
+            height: 60px;
+        }
 
-    //     img {
-    //         height: 30px;
-    //     }
-    // }
+        img {
+            height: 30px;
+        }
+    }
 }

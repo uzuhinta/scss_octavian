@@ -1,5 +1,6 @@
 .service {
     padding: 150px 0;
+    display: block;
     &__heading,
     &__title {
         font-size: 3.6rem;
@@ -44,5 +45,18 @@
     &__type {
         text-decoration: none;
         font-size: 1.4rem;
+    }
+
+    @include maxW(1023) {
+        padding: 100px 0;
+    }
+
+    @include maxW(767) {
+    padding: 60px 0;
+
+        &__list {
+            grid-template-columns: 1fr;
+            grid-gap: 40px 0;
+        }
     }
 }

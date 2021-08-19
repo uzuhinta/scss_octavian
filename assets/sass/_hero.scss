@@ -28,32 +28,33 @@
         font-size: 1.8rem;
         font-weight: 600;
     }
-    // @include maxW(1023) {
-    //     margin-bottom: 100px;
+    @include maxW(1023) {
+        margin-bottom: 100px;
         
-    //     &__content {
-    //         left: 15%;
-    //     }
-    //     &__caption {
-    //         font-size: 5rem;
-    //     }
-    //     &__heading {
-    //         font-size: 11rem;
-    //         margin-bottom: 25px;
-    //     }
-    // }
-    // @include maxW(767) {
-    //     &__caption {
-    //         font-size: 1.8rem;
-    //     }
-    //     &__heading {
-    //         font-size: 4rem;
-    //         margin-bottom: 10px;
-    //     }
+        &__content {
+            left: 15%;
+        }
+        &__caption {
+            font-size: 5rem;
+        }
+        &__heading {
+            font-size: 11rem;
+            margin-bottom: 25px;
+        }
+    }
+    @include maxW(767) {
+        margin-bottom: 60px;
+        &__caption {
+            font-size: 1.8rem;
+        }
+        &__heading {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
 
-    //     &__link {
-    //         font-size: 1.2rem;
-    //     }
+        &__link {
+            font-size: 1.2rem;
+        }
 
-    // }
+    }
 }
